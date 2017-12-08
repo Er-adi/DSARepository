@@ -2,8 +2,17 @@
 public class AdjMatrix {
 
 	private boolean adjMatrix[][];
+	
 	private int vertexCount;
 	
+	public boolean[][] getAdjMatrix() {
+		return adjMatrix;
+	}
+
+	public void setAdjMatrix(boolean[][] adjMatrix) {
+		this.adjMatrix = adjMatrix;
+	}
+
 	public AdjMatrix(int vertexCount) {
 		this.vertexCount = vertexCount;
 		adjMatrix = new boolean[vertexCount][vertexCount];
